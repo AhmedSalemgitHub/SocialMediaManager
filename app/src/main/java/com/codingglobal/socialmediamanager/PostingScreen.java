@@ -16,7 +16,6 @@ import java.security.NoSuchAlgorithmException;
 
 public class PostingScreen extends AppCompatActivity {
 
-    private Button button_Post;
     private EditText editText_Post;
 
     @Override
@@ -24,15 +23,20 @@ public class PostingScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posting_screen);
 
-        button_Post = findViewById(R.id.button_post_postingScreen);
+        Button button_Post = findViewById(R.id.button_post_postingScreen);
         editText_Post = findViewById(R.id.editText_post_postingScreen);
 
         button_Post.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getBase64Key();
+                postToSocialMedia();
             }
         });
+
+    }
+
+    private void postToSocialMedia() {
 
     }
 
