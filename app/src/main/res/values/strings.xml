@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Social Media Manager</string>
+    <string name="button_post_postingScreen">post</string>
+    <string name="editText_hint_postingScreen">Write your Post here</string>
 </resources>
